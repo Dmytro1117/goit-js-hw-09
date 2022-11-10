@@ -23,11 +23,15 @@ btnEl.disabled = true
 function ffffff(selectedDates) {
     const rrr = Date.now()
     if (selectedDates < rrr) {
-        Notiflix.Notify.failure('Qui timide rogat docet negare');
+        Notiflix.Notify.failure("Please choose a date in the future");
         // alert("Please choose a date in the future")
-       
-    }
-btnEl.disabled = false
+      btnEl.disabled = true
+       return
+  } 
+  if (selectedDates > rrr) {
+    Notiflix.Notify.success('It іs Ok');
+    btnEl.disabled = false
+  }
 }
 
 
