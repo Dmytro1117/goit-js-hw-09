@@ -87,8 +87,8 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
-  width: 90px;
-  height: 40px;
+  min-width: 90px;
+  min-height: 40px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
