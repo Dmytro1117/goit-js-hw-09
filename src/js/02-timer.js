@@ -42,6 +42,7 @@ function startTimer() {
     
     Notiflix.Notify.success('Time end');
     clearInterval(timerId);
+    inputEl.disabled = false;
   } else {
     formatDate = convertMs(timeDifference);
     renderDate(formatDate);
@@ -102,7 +103,7 @@ function convertMs(ms) {
 Notiflix.Notify.init({
   width: '400px',
   position:  'center-top', // 'right-top' - 'right-bottom' - 'left-top' - 'left-bottom' - 'center-top' - 'center-bottom' - 'center-center'
-  distance: '10px',
+  distance: '20px',
   opacity: 1,
   borderRadius: '3px',
  timeout: 2000,
