@@ -16,3 +16,69 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.timer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.field {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.value {
+text-align: center;
+  font-family:'Courier New', Courier, monospace;
+ font-size: 40px;
+ font-weight: 700;
+}
+
+.label {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+input,
+button {
+  margin-top: 35px;
+  display: flex;
+  margin-left: auto;
+    margin-right: auto;
+   text-align: center;
+   
+}
+
+input {
+  margin-top: 150px;
+}
+
+button[disabled] {
+  color: dodgerblue;
+  background-color: rgba(130, 127, 127, 0.4);
+}
+
+button:hover {
+  outline: auto;
+  background-color: darkgray;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 90px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: dodgerblue;
+  color: cornsilk;
+  font-size: 25px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
