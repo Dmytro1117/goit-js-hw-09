@@ -57,7 +57,7 @@ function selectDate(selectedDates) {
         // alert("Please choose a date in the future")
       btnEl.disabled = true
        return
-  } 
+  }
   if (selectedDates > dateNow) {
     Notiflix.Notify.success('It іs Ok');
     btnEl.disabled = false
@@ -111,3 +111,4 @@ Notiflix.Notify.init({
   fontAwesomeIconSize: '35px',
   fontSize: '20px',
 });
+
