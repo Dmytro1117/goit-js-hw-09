@@ -2,9 +2,9 @@ import Notiflix from 'notiflix';
 
 const formEl = document.querySelector(".form")
 formEl.addEventListener("submit", handleForm)
- 
+
 function handleForm(e) {
-  e.preventDefault()
+    e.preventDefault()
     let delay = +formEl.delay.value
 for (let i = 1; i <= formEl.amount.value; i++) {
    createPromise(i, delay)
@@ -38,3 +38,5 @@ function createPromise(position, delay) {
     })
         
 }
+
+
